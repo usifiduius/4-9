@@ -1,7 +1,7 @@
 const express = require('express');
-//const res = require('express/lib/response');
+const res = require('express/lib/response');
 const app = express();
-//const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 var bodyParser = require('body-parser');
  
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,4 +25,4 @@ app.post('/', function (req, res){
  //console.log(data);
 app.listen(3000, function () {
 });
-//(process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);
+(process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);
