@@ -14,4 +14,4 @@ app.post('/', function (req, res) {
      res.send('api: OK');
     });
     
-(process.env.NOW_REGION) ? module.exports = app : app.listen(PORT);
+process.env.NOW_REGION ? (module.express = app) : app.listen(PORT);
